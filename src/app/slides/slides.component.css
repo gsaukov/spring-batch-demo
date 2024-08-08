@@ -1,0 +1,21 @@
+splide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: black;
+}
+
+::ng-deep.splide__slide {
+  display: flex;
+  left: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+
+::ng-deep.splide__pagination__page {
+  border-radius: 0;
+  height: 80%;
+  margin: 10px 10px;
+}
