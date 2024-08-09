@@ -1,0 +1,38 @@
+body {
+  background: black;
+  color: white;
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1, strong {
+  font-weight: 200;
+}
+
+mat-card {
+  height: 36em;
+  min-width: 1200px;
+  font-size: 1.5em;
+  line-height: 2rem;
+  font-weight: 200;
+}
+
+mat-card-content {
+  max-width: 90%;
+  min-height: 25em;
+}
+
+mat-card-content, mat-card-title {
+  margin-left: 2em;
+  display: inline-block;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
