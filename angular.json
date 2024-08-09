@@ -5,7 +5,12 @@
   "projects": {
     "spring-batch": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -27,7 +32,7 @@
               }
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
               "node_modules/@splidejs/splide/dist/css/splide.min.css",
               "node_modules/@splidejs/splide/dist/css/themes/splide-default.min.css"
             ],
@@ -89,7 +94,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
