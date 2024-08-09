@@ -1,0 +1,9 @@
+<mat-card class="page-not-found-wrapper">
+  <span>PAGE NOT FOUND!</span>
+  <ng-container [counter]="counter"
+                [interval]="interval"
+                (value)="counter = $event"
+                *ngIf="tryRedirect()">
+      <span>REDIRECTING TO MAIN IN: {{ counter / 100 }}</span>
+  </ng-container>
+</mat-card>
