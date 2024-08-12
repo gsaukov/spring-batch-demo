@@ -26,6 +26,21 @@ mat-card-content, mat-card-title {
   display: inline-block;
 }
 
+.grid-container {
+  display: flex;
+  width: 100%;
+  .item1 {
+    flex: 0 0 66%;
+  }
+  .item2 {
+    flex: 0 0 34%;
+  }
+}
+
+.grid-item {
+  padding: 10px;
+}
+
 .centered {
   position: absolute;
   top: 50%;

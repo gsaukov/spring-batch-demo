@@ -10,7 +10,7 @@ splide {
   display: flex;
   left: 20px;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   color: white;
 }
 
