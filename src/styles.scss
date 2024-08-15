@@ -1,7 +1,11 @@
 body {
   background: black;
   color: white;
-  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  font-weight: 200;
 }
 
 h1, strong {
@@ -51,3 +55,8 @@ mat-card-content, mat-card-title {
   justify-content: center;
   flex-direction: column;
 }
+
+.dark-link:link { color: lightblue; }
+.dark-link:visited { color: deepskyblue; }
+.dark-link:hover { color: white; }
+.dark-link:active { color: lightskyblue; text-decoration:none; font-weight:normal; }
