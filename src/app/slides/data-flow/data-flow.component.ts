@@ -12,7 +12,7 @@ export class DataFlowComponent {
   onWheel($event: WheelEvent) {
     const target = this.scrollContainer.nativeElement;
     const scrollLeft = target.scrollLeft;
-    target.scrollTo({left: scrollLeft + $event.deltaX, behavior: 'smooth' });
+    target.scrollTo({left: scrollLeft + $event.deltaX });
   }
 
 }
