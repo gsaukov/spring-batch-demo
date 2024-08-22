@@ -1,5 +1,13 @@
 .scrollContainer {
-  overflow-x: auto;
+  position: fixed;
+  overflow-x: scroll;
+  width: 90%;
+  white-space: nowrap;
+}
+
+img {
+  display: block;
+  max-width: none;
 }
 
 .scrollContainer::-webkit-scrollbar {
