@@ -18,4 +18,9 @@ splide {
   border-radius: 0;
   height: 80%;
   margin: 10px 10px;
+  /*background: rgba(0, 180, 255, 0.8);*/
+}
+
+::ng-deep.splide__pagination__page.is-active {
+  /*background: rgba(0, 180, 255);*/
 }
