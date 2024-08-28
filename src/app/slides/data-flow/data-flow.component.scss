@@ -3,9 +3,11 @@
   overflow-x: scroll;
   width: 90%;
   white-space: nowrap;
+  height: 90vh;
 }
 
 img {
+  height: 100%;
   display: block;
   max-width: none;
 }

@@ -13,7 +13,7 @@ h1, strong {
 }
 
 mat-card {
-  height: 36em;
+  height: 92vh;
   min-width: 1200px;
   font-size: 1.5em;
   line-height: 2rem;
@@ -21,6 +21,7 @@ mat-card {
 }
 
 mat-card-content {
+  height: 90vh;
   max-width: 90%;
   min-height: 25em;
 }
