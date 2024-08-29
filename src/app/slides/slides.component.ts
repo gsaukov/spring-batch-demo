@@ -20,9 +20,9 @@ export class SlidesComponent implements AfterViewInit {
     "architecture",
     "data-flow",
     "scaling",
-    "implementation",
     "integrations",
     "classic-setup",
+    "implementation",
     "benefits",
   ]
 

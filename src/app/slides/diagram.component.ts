@@ -25,6 +25,11 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
     .scrollContainer::-webkit-scrollbar-thumb {
       background: rgba(0, 157, 255, 0.5);
       border-radius: 5px;
+    }
+
+    .scrollContainer::-webkit-scrollbar-thumb:hover {
+      background: rgba(94, 195, 255, 0.8);
+      border-radius: 5px;
     }`,
   template: `<mat-card>
     <mat-card-content>
