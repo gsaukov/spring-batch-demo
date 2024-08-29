@@ -7,12 +7,4 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class DataFlowComponent {
 
-  @ViewChild('scrollContainer') scrollContainer!: ElementRef;
-
-  onWheel($event: WheelEvent) {
-    const target = this.scrollContainer.nativeElement;
-    const scrollLeft = target.scrollLeft;
-    target.scrollTo({left: scrollLeft + $event.deltaX });
-  }
-
 }

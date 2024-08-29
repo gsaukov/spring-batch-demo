@@ -1,0 +1,53 @@
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+
+@Component({
+  selector: 'app-diagram',
+  styles: `
+    .scrollContainer {
+      position: fixed;
+      overflow-x: scroll;
+      width: 90%;
+      white-space: nowrap;
+      height: 90vh;
+    }
+
+    img {
+      height: 100%;
+      display: block;
+      max-width: none;
+    }
+
+    .scrollContainer::-webkit-scrollbar {
+      height: 8px;
+      background-color: #000000;
+    }
+
+    .scrollContainer::-webkit-scrollbar-thumb {
+      background: rgba(0, 157, 255, 0.5);
+      border-radius: 5px;
+    }`,
+  template: `<mat-card>
+    <mat-card-content>
+      <div #scrollContainer class="scrollContainer" (wheel)="onWheel($event)" (drag)="onDrag($event)" draggable="true">
+        <img [src]="imagePath" draggable="true">
+      </div>
+    </mat-card-content>
+  </mat-card>`,
+})
+export class DiagramComponent {
+  @Input() imagePath: string = '';
+  @ViewChild('scrollContainer') scrollContainer!: ElementRef;
+
+  onWheel($event: WheelEvent) {
+    const target = this.scrollContainer.nativeElement;
+    const scrollLeft = target.scrollLeft;
+    target.scrollTo({left: scrollLeft + $event.deltaX });
+  }
+
+  onDrag($event: DragEvent) {
+    console.log($event)
+    // const target = this.scrollContainer.nativeElement;
+    // const scrollLeft = target.scrollLeft;
+    // target.scrollTo({left: scrollLeft + $event.clientX });
+  }
+}

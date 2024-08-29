@@ -20,6 +20,7 @@ import { ImplementationComponent } from './slides/implementation/implementation.
 import { IntegrationsComponent } from './slides/integrations/integrations.component';
 import { ClassicSetupComponent } from './slides/classic-setup/classic-setup.component';
 import { BenefitsComponent } from './slides/benefits/benefits.component';
+import {DiagramComponent} from "./slides/diagram.component";
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { BenefitsComponent } from './slides/benefits/benefits.component';
     IntegrationsComponent,
     ClassicSetupComponent,
     BenefitsComponent,
+    DiagramComponent
   ],
   imports: [
     BrowserModule,
