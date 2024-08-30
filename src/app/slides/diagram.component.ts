@@ -8,7 +8,7 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
       overflow-x: scroll;
       width: 90%;
       white-space: nowrap;
-      height: 90vh;
+      height: 96vh;
     }
 
     img {
