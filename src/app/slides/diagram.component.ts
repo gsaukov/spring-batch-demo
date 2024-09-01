@@ -33,7 +33,7 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
     }`,
   template: `<mat-card>
     <mat-card-content>
-      <div #scrollContainer class="scrollContainer" (wheel)="onWheel($event)" (drag)="onDrag($event)" draggable="true">
+      <div #scrollContainer class="scrollContainer" (wheel)="onWheel($event)" draggable="true">
         <img [src]="imagePath" draggable="true">
       </div>
     </mat-card-content>
@@ -49,10 +49,4 @@ export class DiagramComponent {
     target.scrollTo({left: scrollLeft + $event.deltaX });
   }
 
-  onDrag($event: DragEvent) {
-    console.log($event)
-    // const target = this.scrollContainer.nativeElement;
-    // const scrollLeft = target.scrollLeft;
-    // target.scrollTo({left: scrollLeft + $event.clientX });
-  }
 }
