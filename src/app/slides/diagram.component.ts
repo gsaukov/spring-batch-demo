@@ -33,8 +33,8 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
     }`,
   template: `<mat-card>
     <mat-card-content>
-      <div #scrollContainer class="scrollContainer" (wheel)="onWheel($event)" draggable="true">
-        <img [src]="imagePath" draggable="true">
+      <div #scrollContainer class="scrollContainer" (wheel)="onWheel($event)">
+        <img [src]="imagePath">
       </div>
     </mat-card-content>
   </mat-card>`,
