@@ -18,12 +18,27 @@ mat-card {
   font-size: 1.5em;
   line-height: 2rem;
   font-weight: 200;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px), screen and (max-height: 700px) {
+  mat-card {
+    font-size: 1.2em !important;
+    line-height: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 1200px), screen and (max-height: 900px) {
+  mat-card {
+    font-size: 1.3em;
+    line-height: 1.8rem;
+  }
 }
 
 mat-card-content {
   height: 100vh;
   max-width: 90%;
-  min-height: 25em;
+  min-height: 20em;
 }
 
 mat-card-content, mat-card-title {
@@ -44,6 +59,13 @@ mat-card-content, mat-card-title {
 
 .grid-item {
   padding: 10px;
+}
+
+.image-decoration {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 3%;
 }
 
 .centered {
