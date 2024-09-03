@@ -1,3 +1,11 @@
 mat-card{
   height: 100vh;
 }
+
+img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transition: transform 0.7s ease-in-out, top 0.7s ease-in-out, left 0.7s ease-in-out;
+}

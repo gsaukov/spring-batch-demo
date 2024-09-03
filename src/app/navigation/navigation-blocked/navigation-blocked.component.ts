@@ -17,6 +17,11 @@ export class NavigationBlockedComponent {
   hours!: number
   minutes!: number
   seconds!: number
+  scale = 'scale(1)';
+  positionTop: number = 0;
+  positionLeft: number = 0;
+  countDownInterval!: any
+  glideInterval!: any
 
   constructor(private router: Router) {
   }
@@ -24,12 +29,16 @@ export class NavigationBlockedComponent {
   ngOnInit(): void {
     if (!isDemoTime()) {
       this.updateCountdown()
-      const interval = setInterval(() => {
+      this.randomZoomAndMove()
+      this.countDownInterval = setInterval(() => {
         if (isDemoTime()) {
-          this.navigateToIntro(interval)
+          this.navigateToIntro()
         }
         this.updateCountdown()
       }, 1000)
+      this.glideInterval = setInterval(() => {
+          this.randomZoomAndMove()
+      }, 20000)
     } else {
       this.navigateToIntro()
     }
@@ -45,11 +54,14 @@ export class NavigationBlockedComponent {
     this.seconds = this.getSeconds(diff)
   }
 
-  navigateToIntro(interval?: any) {
-    if (interval) {
-      clearInterval(interval)
+  navigateToIntro() {
+    if (this.countDownInterval) {
+      clearInterval(this.countDownInterval)
     }
-    this.router.navigate(['/introduction'])
+    if (this.glideInterval) {
+      clearInterval(this.glideInterval)
+    }
+    this.router.navigate(['/slides'])
   }
 
   getDays(t: number) {
@@ -66,5 +78,11 @@ export class NavigationBlockedComponent {
 
   getSeconds(t: number) {
     return Math.floor((t / SECOND) % 60)
+  }
+
+  randomZoomAndMove() {
+    this.positionTop = Math.floor(Math.random() * (window.innerHeight - 1489)); //img height 1489
+    this.positionLeft =  Math.floor(Math.random() * (window.innerWidth - 3728)); //img width 3728
+    this.scale = `scale(${Math.random() * 1.5})`
   }
 }

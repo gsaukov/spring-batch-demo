@@ -9,5 +9,12 @@
         </strong>
       </span>
     </div>
+    <img
+      [style.transform]="scale"
+      [style.top.px]="positionTop"
+      [style.left.px]="positionLeft"
+      src="/images/dom_ghaiti.png"
+      (click)="randomZoomAndMove()"
+    />
   </mat-card-content>
 </mat-card>
