@@ -81,8 +81,15 @@ export class NavigationBlockedComponent {
   }
 
   randomZoomAndMove() {
-    this.positionTop = Math.floor(Math.random() * (window.innerHeight - 1489)); //img height 1489
-    this.positionLeft =  Math.floor(Math.random() * (window.innerWidth - 3728)); //img width 3728
-    this.scale = `scale(${Math.random() * 1.5})`
+    this.positionTop = Math.floor(Math.random() * (-1489/1.8)); //img height 1489
+    this.positionLeft = Math.floor(Math.random() * (-3728/1.8)); //img width 3728
+    this.scale = `scale(${this.randomScale()})`
+    console.log(this.scale)
   }
+
+  randomScale():number{
+    const scale = Math.random() * 1.5
+    return scale<0.1?this.randomScale():scale
+  }
+
 }
