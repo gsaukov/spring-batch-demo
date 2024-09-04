@@ -21,10 +21,10 @@ mat-card {
   overflow: hidden;
 }
 
-@media screen and (max-width: 900px), screen and (max-height: 700px) {
+@media screen and (max-width: 900px), screen and (max-height: 720px) {
   mat-card {
-    font-size: 1.2em !important;
-    line-height: 1.5rem !important;
+    font-size: 1.1em !important;
+    line-height: 1.4rem !important;
   }
 }
 
@@ -62,10 +62,11 @@ mat-card-content, mat-card-title {
 }
 
 .image-decoration {
+  z-index: -1;
   height: 100vh;
   position: absolute;
   top: 0;
-  right: 3%;
+  right: 50px;
 }
 
 .centered {

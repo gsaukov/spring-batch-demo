@@ -7,10 +7,10 @@ splide {
 }
 
 ::ng-deep.splide__slide {
-  display: flex;
-  left: 20px;
-  justify-content: flex-start;
-  align-items: flex-start;
+  /*display: flex;*/
+  left: 10px;
+  /*justify-content: flex-start;*/
+  /*align-items: flex-start;*/
   color: white;
 }
 
