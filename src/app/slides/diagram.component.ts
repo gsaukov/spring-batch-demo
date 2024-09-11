@@ -11,7 +11,7 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
       height: 96vh;
     }
 
-    img {
+    .image-object {
       height: 100%;
       display: block;
       max-width: none;
@@ -34,14 +34,19 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
   template: `<mat-card>
     <mat-card-content>
       <div #scrollContainer class="scrollContainer" (wheel)="onWheel($event)">
-        <img [src]="imagePath">
+        <ng-container *ngIf="!loaded;">
+          <img class="centered" src='/images/spinner.svg'>
+        </ng-container>
+        <img class="image-object" [style.visibility]="loaded?'unset':'hidden'" [src]="imagePath" (load)="onImageLoad()">
       </div>
     </mat-card-content>
-  </mat-card>`,
+  </mat-card>
+  `,
 })
 export class DiagramComponent {
   @Input() imagePath: string = '';
   @ViewChild('scrollContainer') scrollContainer!: ElementRef;
+  loaded:boolean = false;
 
   onWheel($event: WheelEvent) {
     const target = this.scrollContainer.nativeElement;
@@ -49,4 +54,7 @@ export class DiagramComponent {
     target.scrollTo({left: scrollLeft + $event.deltaX });
   }
 
+  onImageLoad() {
+    this.loaded = true;
+  }
 }
