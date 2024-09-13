@@ -21,6 +21,7 @@ import { IntegrationsComponent } from './slides/integrations/integrations.compon
 import { ClassicSetupComponent } from './slides/classic-setup/classic-setup.component';
 import { BenefitsComponent } from './slides/benefits/benefits.component';
 import {DiagramComponent} from "./slides/diagram.component";
+import {GhslDataComponent} from "./slides/ghsl-data/ghsl-data.component";
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import {DiagramComponent} from "./slides/diagram.component";
     IntegrationsComponent,
     ClassicSetupComponent,
     BenefitsComponent,
+    GhslDataComponent,
     DiagramComponent
   ],
   imports: [

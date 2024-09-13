@@ -22,6 +22,7 @@ export class SlidesComponent implements AfterViewInit {
     "scaling",
     "integrations",
     "classic-setup",
+    "ghsl-data",
     "implementation",
     "benefits",
   ]
