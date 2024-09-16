@@ -80,7 +80,7 @@ mat-card-content, mat-card-title {
   flex-direction: column;
 }
 
-.dark-link:link { color: lightblue; }
-.dark-link:visited { color: deepskyblue; }
-.dark-link:hover { color: lightblue; }
-.dark-link:active { color: lightskyblue; }
+.dark-link:link { color: deepskyblue; }
+.dark-link:visited { color: lightblue; }
+.dark-link:hover { color: white; }
+.dark-link:active { color: powderblue; }
