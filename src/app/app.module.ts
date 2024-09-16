@@ -19,9 +19,9 @@ import { ScalingComponent } from './slides/scaling/scaling.component';
 import { ImplementationComponent } from './slides/implementation/implementation.component';
 import { IntegrationsComponent } from './slides/integrations/integrations.component';
 import { ClassicSetupComponent } from './slides/classic-setup/classic-setup.component';
-import { BenefitsComponent } from './slides/benefits/benefits.component';
 import {DiagramComponent} from "./slides/diagram.component";
 import {GhslDataComponent} from "./slides/ghsl-data/ghsl-data.component";
+import {ThankYouComponent} from "./slides/thank-you/thank-you.component";
 
 @NgModule({
   declarations: [
@@ -39,8 +39,8 @@ import {GhslDataComponent} from "./slides/ghsl-data/ghsl-data.component";
     ImplementationComponent,
     IntegrationsComponent,
     ClassicSetupComponent,
-    BenefitsComponent,
     GhslDataComponent,
+    ThankYouComponent,
     DiagramComponent
   ],
   imports: [

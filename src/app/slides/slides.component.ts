@@ -24,7 +24,7 @@ export class SlidesComponent implements AfterViewInit {
     "classic-setup",
     "ghsl-data",
     "implementation",
-    "benefits",
+    "thank-you",
   ]
 
   constructor(private router: Router,
