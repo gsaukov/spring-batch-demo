@@ -1,6 +1,12 @@
 # spring-batch-demo
 
 1. Intro
+   Hello and welcome everyone to today's talk about spring batch. I will talk something I know, like and have real hands-on experience.  
+   But before we start I would like to ask you two questions:  
+   How many of you know when or where to use spring batch? Just put a plus in chat.  
+   How many of you know how work with this framework? Just put a plus in chat.  
+   Nice!  
+   So lets start with its features and why is so exciting instrument.  
 2. History
 3. Use-cases
 4. Architecture
@@ -15,7 +21,7 @@
     * Step - Single unit of work.
     * Partitioner - Horizontal and vertical scaler.
     * Chunk, Reader, Process & Writer - would be discussed in more details on the next slide.
-
+    Map everything to code and explain.
 5. Data-flow
     So this is the place where you controll how many items you simultaneously read and write. That directly affects your memory and cpu consumption. That is where spring scope plays a big role.
     memory management ang garbage collection
@@ -34,10 +40,15 @@
 9. Ghsl-data
 10. Implementation
 11. Thank-you
-    Can you guess how I tested it? Hint I used only one Number.
-    Batch Jobs simulateneously modify a lot of data race conditions are very-very common in this scenario. Order things to prevent deadlocks. Optimistic locks and other race conditions. Be ready for that.
+    So this is all I wanted to show you today.  
+    But before we finish I would like to ask you two questions:  
+    How many of you know when or where to use spring batch? Just put a plus in chat.  
+    How many of you know how work with this framework? Just put a plus in chat.  
+    -----------  
+    Can you guess how I tested it? Hint I used only one Number.  
+    Batch Jobs simultaneously modify mass amounts of data race conditions are very-very common in this scenario. Order things to prevent deadlocks. Optimistic locks and other race conditions are common be ready for that.  
     Weight and estimate how much you read and process at the same time to avoid OutOfMemory Errors.  
-    You may not even notice when you start to dump whole DataBase into the Memory.
-    Cons come from the advantages actually Java has very limited support of GPU which is sometimes badly needed.
-    It is complex you need to understand what IO is Connection Session Transaction management, DataBase design and query optimisation.
-    In most of the cases Your Database is your bottleneck.
+    You may not even notice when you start to dump whole DataBase into the Memory.  
+    Cons come from the advantages actually Java has very limited support of GPU which is sometimes badly needed.  
+    It is complex you need to understand what IO is Connection Session Transaction management, DataBase design and query optimisation.  
+    In most of the cases Your Database is your bottleneck.  
