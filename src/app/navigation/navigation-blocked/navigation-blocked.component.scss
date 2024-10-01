@@ -9,3 +9,8 @@ img {
   left: 0;
   transition: transform 0.7s ease-in-out, top 0.7s ease-in-out, left 0.7s ease-in-out;
 }
+
+.text-container {
+  font-size: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
