@@ -1,15 +1,16 @@
 # spring-batch-demo
 
-1. Intro
+1. Intro  
    Hello and welcome everyone to today's talk about spring batch. I will talk something I know, like and have real hands-on experience.  
    But before we start I would like to ask you two questions:  
    How many of you know when or where to use spring batch? Just put a plus in chat.  
    How many of you know how work with this framework? Just put a plus in chat.  
    Nice!  
    So lets start with its features and why is so exciting instrument.  
-2. History
-3. Use-cases
-4. Architecture
+2. History  
+   During my career i ve seen all three variations of bathjobs: stored procedures, custom applications and spring batch (both annotation based and XMLs) and can conclude that Spring batch is the coolest tool among them.
+3. Use-cases  
+4. Architecture  
     Please do be overwhelmed by the number of details on this slide, we will go over it for a couple of times, 
     This would include theory, business case and reference to the code, so I hope you will get clear understanding what is what.
     So lets start:
@@ -22,8 +23,8 @@
     * Partitioner - Horizontal and vertical scaler.
     * Chunk, Reader, Process & Writer - would be discussed in more details on the next slide.
     Map everything to code and explain.
-5. Data-flow
-    So this is the place where you controll how many items you simultaneously read and write. That directly affects your memory and cpu consumption. That is where spring scope plays a big role.
+5. Data-flow  
+    So this is the place where you control how many items you simultaneously read and write. That directly affects your memory and cpu consumption and that is why spring scope plays a big role.
     memory management ang garbage collection
 6. Scaling
     So everything on this slide should be familiar for us right?  
@@ -39,7 +40,7 @@
 8. Classic-setup
 9. Ghsl-data
 10. Implementation
-11. Thank-you
+11. Thank-you  
     So this is all I wanted to show you today.  
     But before we finish I would like to ask you two questions:  
     How many of you know when or where to use spring batch? Just put a plus in chat.  
