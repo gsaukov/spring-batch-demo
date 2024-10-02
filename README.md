@@ -38,7 +38,16 @@
     As I already mentioned Spring has incredible number of extensions and things that it supports.
     I would start with transaction management PlatformTransactionManager more specifically and enormous number of datasource with which it integrates.
 8. Classic-setup
-9. Ghsl-data
+9. Ghsl-data  
+   Now that you have a better understanding of Spring Batch, let's discuss the GHSL data I processed using it.  
+   The data consists of archived images with two types of resolutions: 30ss (arcseconds) and 3ss. The main difference between them is their resolution. Each pixel in a 30ss image represents 1 square kilometer, while each pixel in a 3ss image covers an area of 100 x 100 meters, or 10,000 square meters.  
+   Additionally, the source images are in 64-bit float format, making them incompatible with standard tools, which typically work with 32-bit integer images.  
+   So, what was the goal? Initially, there wasn’t a strict plan, just a direction. I knew I needed to convert these images into classic 32-bit formats and apply a color scheme instead of grayscale.  
+   The idea was to create three layers for different levels of detail:  
+   * 90ss: For global or continent-level views.
+   * 30ss: For city or regional views.
+   * 3ss: For maximum resolution, showing data at the level of streets or individual buildings.
+   In the next slide, I will show how this was implemented in practice.
 10. Implementation
 11. Thank-you  
     So this is all I wanted to show you today.  
