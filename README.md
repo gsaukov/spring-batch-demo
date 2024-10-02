@@ -45,7 +45,8 @@
     But before we finish I would like to ask you two questions:  
     How many of you know when or where to use spring batch? Just put a plus in chat.  
     How many of you know how work with this framework? Just put a plus in chat.  
-    -----------  
+    
+--------
     Can you guess how I tested it? Hint I used only one Number.  
     Batch Jobs simultaneously modify mass amounts of data race conditions are very-very common in this scenario. Order things to prevent deadlocks. Optimistic locks and other race conditions are common be ready for that.  
     Weight and estimate how much you read and process at the same time to avoid OutOfMemory Errors.  
