@@ -10,6 +10,7 @@
 2. History  
    During my career I ve seen all three generations of bathjobs: stored procedures, custom applications and spring batch (both annotation based and XMLs) and can conclude that Spring batch is the coolest tool among them.
 3. Use-cases  
+   Distributed transaction.
 4. Architecture  
     Please do not be overwhelmed by the number of details on this slide, we will go over it for a couple of times.  
     This would include theory, business case and reference to the code, so I hope you will get clear understanding what is what.
