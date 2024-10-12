@@ -26,7 +26,8 @@
     Map everything to code and explain.
 5. **Data-flow**  
     So this is the place where you control how many items you simultaneously read and write. That directly affects your memory and cpu consumption and that is why spring scope plays a big role.
-    This is the place to control memory management ang garbage collection.
+    This is the place to control memory management ang garbage collection.  
+    Chunk size controls the number of records that are processed in a single transaction, with it you can control optimal performance and reliability.
 6. **Scaling**  
     So everything on this slide should be familiar for us right?  
     Horizontal scaling can be done 2 ways Remote Chunking and Remote partitioning. The main difference between these two, is where you put your message broker (or any other communication channel).  
