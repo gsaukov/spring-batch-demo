@@ -66,4 +66,4 @@
     You may not even notice when you start to dump whole DataBase into the Memory.  
     Cons come from the advantages actually Java has very limited support of GPU which is sometimes badly needed.  
     It is complex you need to understand what IO is Connection Session Transaction management, DataBase design and query optimisation.  
-    In most of the cases Your Database is your bottleneck.  
+    In most of the cases Your Database is your bottleneck.
