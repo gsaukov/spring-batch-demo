@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core'
 import {CanActivate, Router, RouterStateSnapshot, ActivatedRouteSnapshot} from '@angular/router'
 
-export const DEMO_DATE = new Date(Date.parse("2024-10-11T15:00:00+0200"))
+export const DEMO_DATE = new Date(Date.parse("2024-10-25T15:00:00+0200"))
 
 export function isDemoTime(): boolean {
   return (new Date().getTime() - new Date(DEMO_DATE).getTime()) > 0
